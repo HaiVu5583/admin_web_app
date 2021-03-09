@@ -16,7 +16,7 @@ import SideBar from "src/components/Sidebar";
 import Header from "src/components/Header";
 import User from "src/screens/User";
 import Post from "src/screens/Post";
-import Banner from "src/screens/Post";
+import Banner from "src/screens/Banner";
 import Session from "src/screens/Session";
 import Order from "src/screens/Order";
 import Payment from "src/screens/Payment";
@@ -24,7 +24,8 @@ import Dashboard from "src/screens/Dashboard";
 
 const routes = [
   {
-    path: "/dashboard",
+    path: "/",
+    exact: true,
     main: () => <Dashboard />,
   },
   {
@@ -62,7 +63,12 @@ const MainRoute = (props) => {
         <Switch>
           {routes.map((route, index) => {
             return (
-              <Route key={index} path={route.path} children={<route.main />} />
+              <Route
+                key={index}
+                path={route.path}
+                children={<route.main />}
+                exact={route.exact}
+              />
             );
           })}
         </Switch>

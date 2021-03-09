@@ -12,7 +12,7 @@ const SideBar = (props) => {
       <nav>
         <ul className="px-4 pt-4 pb-2">
           <li className="text-white">
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/">Dashboard</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
