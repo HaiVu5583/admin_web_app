@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "src/logo.svg";
+import { Link } from "react-router-dom";
 
 const SideBar = (props) => {
   return (
@@ -11,38 +12,36 @@ const SideBar = (props) => {
       <nav>
         <ul className="px-4 pt-4 pb-2">
           <li className="text-white">
-            <a href="#">Dashboard</a>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
           <li className="text-white">
-            <a href="#">User</a>
+            <Link to="/user">User</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
           <li className="text-white">
-            <a href="#">Banner</a>
+            <Link to="/banner">Banner</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
           <li className="text-white">
-            <a href="#">Post</a>
+            <Link to="/post">Post</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
           <li className="text-white">
-            <a href="#">Session</a>
+            <Link to="/session">Session</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
           <li className="text-white">
-            <a href="#">Order</a>
+            <Link to="/order">Order</Link>
           </li>
         </ul>
         <ul className="px-4 py-2">
-          <li className="text-white">
-            <a href="#">Payment</a>
-          </li>
+          <li className="text-white"></li>
         </ul>
       </nav>
     </aside>
