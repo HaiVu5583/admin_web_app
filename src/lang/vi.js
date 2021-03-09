@@ -1,9 +1,10 @@
 const vi = {
   welcome: "Welcome to React JS",
-  app_name: "Mobile Web App",
+  app_name: "Admin Web App",
   login: "Login",
   username: "Username",
   password: "Password",
+  hello: "Xin chào",
 };
 
 export default vi;
