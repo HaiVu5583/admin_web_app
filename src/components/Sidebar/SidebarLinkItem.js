@@ -9,20 +9,20 @@ const SideBarLinkItem = React.memo((props) => {
   });
   if (isMatch) {
     return (
-      <ul className="px-4 mt-2 py-2 bg-white">
-        <li className="text-blue-900">
+      <ul className="px-4 bg-white bg-opacity-20 border-l-2 border-blue-400">
+        <li>
           <Link to={path}>
-            <div>{text}</div>
+            <div className="py-2 text-white">{text}</div>
           </Link>
         </li>
       </ul>
     );
   }
   return (
-    <ul className="px-4 pt-4 pb-2">
-      <li className="text-white">
+    <ul className="px-4 border-l-2 border-transparent">
+      <li>
         <Link to={path}>
-          <div>{text}</div>
+          <div className="py-2 text-white">{text}</div>
         </Link>
       </li>
     </ul>
