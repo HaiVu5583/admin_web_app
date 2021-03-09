@@ -17,7 +17,7 @@ const VerticalTimeline = (props) => {
       <div
         class="border-r-2 border-blue-500 absolute h-full top-0"
         style={{ left: "7px" }}
-      ></div>
+      />
       <ul class="list-none m-0 p-0">
         {!!data &&
           data.map((item) => {
