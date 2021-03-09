@@ -4,7 +4,7 @@ const VerticalTimelineItem = (props) => {
     <li class="mb-2">
       <div class="flex items-center mb-1">
         <div class="bg-blue-500 rounded-full h-4 w-4"></div>
-        <div class="flex-1 ml-4 font-semibold">{title}</div>
+        <div class="flex-1 ml-4 font-semibold text-gray-800">{title}</div>
       </div>
       <div class="ml-8 text-gray-500">{content}</div>
     </li>

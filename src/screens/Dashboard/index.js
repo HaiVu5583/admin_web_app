@@ -142,7 +142,7 @@ const DashBoard = (props) => {
                     {headerGroup.headers.map((column) => (
                       <th
                         {...column.getHeaderProps()}
-                        className="py-2 px-2 font-semibold text-gray-600 text-left"
+                        className="py-2 px-2 font-semibold text-gray-800 text-left text-sm"
                       >
                         {column.render("Header")}
                       </th>
@@ -159,7 +159,7 @@ const DashBoard = (props) => {
                         return (
                           <td
                             {...cell.getCellProps()}
-                            className="border-b-gray-200 border-b p-2 text-gray-400"
+                            className="border-b-gray-200 border-b p-2 text-gray-500"
                           >
                             {cell.render("Cell")}
                           </td>
